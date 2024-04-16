@@ -7,8 +7,8 @@ class User(Model):
     first_name = fields.CharField(max_length=255, null=True)
     last_name = fields.CharField(max_length=255, null=True)
 
-    business = fields.ManyToManyField("models.Business", related_name="users")
-    supplier = fields.ManyToManyField("models.Supplier", related_name="users")
-    
+    business = fields.OneToOneField("models.Business", related_name="users", null=True)
+    supplier = fields.OneToOneField("models.Supplier", related_name="users", null=True)
+
     class Meta:
         table = "users"

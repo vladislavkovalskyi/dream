@@ -9,7 +9,7 @@ class Supplier(Model):
 
     description = fields.TextField(null=True)
 
-    products = fields.ManyToManyField("models.Product", related_name="suppliers")
+    products = fields.OneToOneField("models.Product", related_name="suppliers")
 
     class Meta:
         table = "suppliers"
