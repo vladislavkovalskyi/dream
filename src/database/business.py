@@ -11,3 +11,6 @@ class Business(Model):
 
     budget = fields.FloatField(default=0.0, null=True)
     employees_count = fields.IntField(default=1)
+
+    class Meta:
+        table = "businesses"
