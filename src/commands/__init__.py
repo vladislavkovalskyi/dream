@@ -1,3 +1,3 @@
-from src.commands import start
+from src.commands import start, search
 
-dps = [start.dp]
+dps = [start.dp, search.dp]

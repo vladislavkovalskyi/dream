@@ -2,7 +2,7 @@ from envparse import env
 
 env.read_envfile(".env")
 
-GOOGLE_SEARCH_TOKEN = env.str("GOOGLE_SEARCH_TOKEN")
+SERPER_NEWS_API = env.str("SERPER_NEWS_API")
 
 DB_USERNAME = env.str("DB_USERNAME")
 DB_PASSWORD = env.str("DB_PASSWORD")

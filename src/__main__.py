@@ -2,7 +2,6 @@ from src.config import DB_USERNAME, DB_PASSWORD, DB_ADDRESS, DB_PORT
 from src import dps
 
 from mubble import Dispatch, Token, API, Mubble
-
 from tortoise import Tortoise
 
 dispatch = Dispatch()
